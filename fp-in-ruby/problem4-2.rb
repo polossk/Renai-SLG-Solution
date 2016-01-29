@@ -12,9 +12,9 @@ m = gets.to_i
 m.times { gold << gets.split(' ').map(&:to_i) }
 
 l = n - m + 1
-ans = (0 .. l * l - 1).select { |id|
+ans = (0 ... l * l).select { |id|
 	i, j = id2xy( id, l )
-	(0 .. m * m - 1).all? { |nd|
+	(0 ... m * m).all? { |nd|
 		dx, dy = id2xy( nd, m )
 		grid[i + dx][j + dy] == gold[dx][dy]
 	}
