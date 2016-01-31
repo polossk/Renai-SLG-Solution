@@ -1,9 +1,9 @@
 # Solution of 恋愛SLG
 ---
-## Home: 
+## Home
 >https://paiza.jp/poh/ando/
 
-## Item List:
+## Item List
 | Item | Column1      | Column2      | Column3      | Column4      | Column5      |
 | ---- | -----------: | -----------: | -----------: | -----------: | -----------: |
 | Row1 | たれ目       | つり目       | 眼帯         |              |              |
