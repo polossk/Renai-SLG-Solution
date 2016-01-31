@@ -3,17 +3,17 @@
 
 def reduce( t )
 	while t % 10 == 0 do t /= 10 end
-	t
+	t % 100000000000
 end
 
 def resize( t )
-	t % 100000000000
+	t % 1000000000
 end
 
 ans = 1
 n = gets.to_i
 n.times { |i|
 	now = i + 1
-	ans = resize( reduce( reduce( now ) * ans ) )
+	ans = reduce( reduce( now ) * ans )
 }
-puts (ans % 1000000000)
+puts resize( ans )
