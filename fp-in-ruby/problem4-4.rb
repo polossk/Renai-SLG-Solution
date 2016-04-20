@@ -3,6 +3,11 @@
 
 # the code below will exceed the stack limit,
 # because ruby didn't support tail call optimisation.
+#
+# def reduce( t )
+# 	return reduce( t / 10 ) if t % 10 == 0
+# 	t % 100000000000
+# end
 
 def reduce( t )
 	while t % 10 == 0 do t /= 10 end
